@@ -30,7 +30,7 @@ type CadasterPetInput struct {
 	Weight   float32
 	Size     byte
 	Color    string
-	Spayed   byte
+	Neutered byte
 	Origin   string
 	Status   byte
 	Vaccines Vaccines

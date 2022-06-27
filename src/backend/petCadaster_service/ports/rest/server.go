@@ -38,7 +38,7 @@ func MustNewServer(params ServerParams) Server {
 
 func (s *Server) Run() error {
 	r := gin.Default()
-	r.GET("/ping", s.PingEndpoint)
+	r.GET("/ping", s.PingEndpoint(*gin.Context))
 	r.Run()
 	return nil
 }

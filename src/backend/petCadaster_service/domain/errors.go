@@ -11,4 +11,10 @@ var (
 
 	// ErrMissingAppDependency indicates that was not provided the app param
 	ErrMissingAppDependency = errors.New("missing required dependency: app")
+
+	// ErrMissingPetsRepositoryDependency indicates that was not provided the petsRepo param
+	ErrMissingPetsRepositoryDependency = errors.New("missing required dependency: petsRepo")
+
+	// ErrMissingValidatorDependency indicates that was not provided the validator param
+	ErrMissingValidatorDependency = errors.New("missing required dependency: validator")
 )
