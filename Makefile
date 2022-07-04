@@ -16,3 +16,9 @@ rest-api:
 mock:
 	rm -rf mocks
 	$(GOPATH)/bin/mockgen -source=src/backend/domain/repository.go -destination=mocks/domainrepository.go -package=mocks
+
+back_db:
+	cd src/backend/db && docker compose up -d 
+
+shutdown_back_db:
+	cd src/backend/db && docker compose down 
