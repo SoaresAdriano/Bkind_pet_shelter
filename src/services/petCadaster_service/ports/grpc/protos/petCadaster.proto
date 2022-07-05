@@ -3,4 +3,39 @@ syntax = "proto3";
 package grpc;
 option go_package="ports/grpc";
 
-service petCadaster{}
+service petCadaster{
+    rpc ListPets (Empty) returns (stream PetInfo);
+    rpc GetPet (ID) returns (PetInfo);
+    rpc CreatePetCadaster (PetInfo) returns (ID);
+    rpc UpdatePetCadaster (PetInfo) returns (Status);
+    rpc DeletePetCadaster (ID) returns (Status);
+}
+
+message Empty{}
+
+message PetInfo {
+    UUID id = 1;
+    string species = 2;
+    string breed = 3;
+    string sex = 4;
+    int32 age = 5;
+    float weight = 6;
+    string size = 7;
+    string color = 8;
+    string neutered = 9;
+    string origin = 10;
+    string situation = 11;
+    string registeredat = 12;
+}
+
+message UUID {
+    string value = 1;
+}
+
+message ID {
+    UUID value = 1;
+}
+
+message Status {
+    bool value = 1;
+}

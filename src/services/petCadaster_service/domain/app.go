@@ -22,18 +22,17 @@ type FindPetInput struct {
 
 // CadasterPetInput encapsulates the necessary fields to perform a pet cadaster
 type CadasterPetInput struct {
-	Name     string
-	Species  string
-	Breed    string
-	Gender   byte
-	Age      uint8
-	Weight   float32
-	Size     byte
-	Color    string
-	Neutered byte
-	Origin   string
-	Status   byte
-	Vaccines Vaccines
+	Name      string
+	Species   string
+	Breed     string
+	Sex       byte
+	Age       uint8
+	Weight    float32
+	Size      byte
+	Color     string
+	Neutered  byte
+	Origin    string
+	Situation byte
 }
 
 // ListPetsInput encapsulates the necessary fields to perform a pet list according with species command

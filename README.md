@@ -20,6 +20,7 @@ are admitted into the organization’s care. Actual admission, adoption, or euth
 organization cannot be inferred by the use of this terminology.
 
 `Castration`
+
 The removal of the testicles of a male animal.
 
 `Capacity for Care`
@@ -74,8 +75,8 @@ A place to treat abandoned, injured or lost animals and provide the care they ne
 `Spay`
 
 The surgical removal of a female pet's uterus and ovaries to prevent reproduction.
-
-More terms can be seeing here:
+<br/><br/>
+## More terms can be seeing here:
 
 [sheltervet.org](https://www.sheltervet.org/assets/PDFs/shelter%20terminology.pdf)
 
