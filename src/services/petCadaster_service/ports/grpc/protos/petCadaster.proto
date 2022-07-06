@@ -8,13 +8,15 @@ service petCadaster{
     rpc GetPet (ID) returns (PetInfo);
     rpc CreatePetCadaster (PetInfo) returns (ID);
     rpc UpdatePetCadaster (PetInfo) returns (Status);
+    rpc RenamePet (RenameInfo) returns (Status);
     rpc DeletePetCadaster (ID) returns (Status);
+    rpc CountPets (Empty) returns (stream CountInfo);
 }
 
 message Empty{}
 
 message PetInfo {
-    UUID id = 1;
+    ID id = 1;
     string species = 2;
     string breed = 3;
     string sex = 4;
@@ -28,13 +30,23 @@ message PetInfo {
     string registeredat = 12;
 }
 
-message UUID {
-    string value = 1;
+message RenameInfo {
+    ID id = 1;
+    string name = 2;
+}
+
+message CountInfo {
+    int64 value = 1;
 }
 
 message ID {
     UUID value = 1;
 }
+
+message UUID {
+    string value = 1;
+}
+
 
 message Status {
     bool value = 1;

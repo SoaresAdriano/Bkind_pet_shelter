@@ -25,7 +25,7 @@ type Pet struct {
 }
 
 // NewPet creates a new pet
-func NewPet(name string, species string, breed string, sex byte, age uint8, weight float32, size byte, color string, neutered byte, origin string, status byte, vaccines Vaccines) Pet {
+func NewPet(name string, species string, breed string, sex byte, age uint8, weight float32, size byte, color string, neutered byte, origin string, situation byte, vaccines Vaccines) Pet {
 	now := time.Now()
 
 	return Pet{
@@ -40,8 +40,7 @@ func NewPet(name string, species string, breed string, sex byte, age uint8, weig
 		Color:        color,
 		Neutered:     neutered,
 		Origin:       origin,
-		Situation:    status,
-		Vaccines:     vaccines,
+		Situation:    situation,
 		RegisteredAt: now,
 	}
 }
