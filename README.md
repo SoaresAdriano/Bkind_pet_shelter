@@ -1,6 +1,6 @@
 # Bkind Pet Shelter
 
-O projeto Bkind chegou como um desafio do meu Tech lead Luís, da Dito. Em uma conversa de 1:1 surgiu a ideia onde a partir de um CRUD inicial eu fosse capaz de dar meus primeiros passos na criação de uma aplicação que realize os conceitos básicos de um CRUD. Para esse propósito então decidi iniciar a criação de um sistema capaz de realizar operações de um abrigo para animais. A documentação do projeto inteiro ainda será abordada.
+O projeto Bkind chegou como um desafio do meu Tech lead Luís, da empresa [Dito](https://www.dito.com.br/). Em uma conversa de 1:1 surgiu a ideia onde a partir de um CRUD inicial eu fosse capaz de dar meus primeiros passos na criação de uma aplicação que realize os conceitos básicos de um CRUD. Para esse propósito então decidi iniciar a criação de um sistema capaz de realizar operações de um abrigo para animais. A documentação do projeto inteiro ainda será abordada.
 
 
 ## Ubiquitous Language
