@@ -6,6 +6,11 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
+type Logger interface {
+	Debug(ctx context.Context, msg string, args ...interface{})
+	Info(ctx context.Context, msg string, args ...interface{})
+}
+
 // ValidatorInterface determines the contracts with validator
 type ValidatorInterface interface {
 	Validate(obj interface{}) (err []error)

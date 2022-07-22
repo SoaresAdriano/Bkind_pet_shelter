@@ -1,14 +1,15 @@
 package domain
 
 import (
+	"bkind_pet_shelter/src/services/petCadaster_service/domain/entity"
 	"context"
 )
 
 // Application defines the contracts with the service application layer
 type Application interface {
-	FindPet(ctx context.Context, in FindPetInput) (Pet, []error)
+	FindPet(ctx context.Context, in FindPetInput) (entity.Pet, []error)
 	CadasterPet(ctx context.Context, in CadasterPetInput) (string, []error)
-	ListPets(ctx context.Context, in ListPetsInput) ([]Pet, []error)
+	ListPets(ctx context.Context, in ListPetsInput) ([]entity.Pet, []error)
 	CountPets(ctx context.Context, in CountPetsInput) (uint64, []error)
 	UpdateCadaster(ctx context.Context, in UpdatePetCadasterInput) []error
 	DeleteCadaster(ctx context.Context, in DeletePetCadasterInput) []error
@@ -47,7 +48,7 @@ type CountPetsInput struct {
 
 // UpdateCadasterInput encapsulates the necessary fields to perform a pet update cadaster command
 type UpdatePetCadasterInput struct {
-	Pet *Pet
+	Pet *entity.Pet
 }
 
 // DeleteCadasterInput encapsulates the necessary fields to perform a pet delete command
